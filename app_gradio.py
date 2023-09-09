@@ -327,8 +327,8 @@ with gr.Blocks(css=css, title='Fast Segment Anything') as demo:
                         clear_btn_t = gr.Button("Clear", variant="secondary")
 
                 gr.Markdown("Try some of the examples below ⬇️")
-                gr.Examples(examples=[["examples/dogs.jpg"]] + examples,
-                            inputs=[cond_img_e],
+                gr.Examples(examples=[["examples/dogs.jpg"], ["examples/fruits.jpg"], ["examples/flowers.jpg"]],
+                            inputs=[cond_img_t],
                             # outputs=segm_img_e,
                             # fn=segment_everything,
                             # cache_examples=True,
